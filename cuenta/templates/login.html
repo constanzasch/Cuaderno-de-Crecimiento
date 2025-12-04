@@ -8,6 +8,7 @@
 <h1>¡Bienvenidas familias!</h1>
 <h2>Hola</h2> 
 <form method="POST">
+        {% csrf_token %}
         <input type="text" name="username" placeholder="Nombre de usuario">
         <input type="password" name="password" placeholder="Escriba su contraseña">
         <button type="submit"> Iniciar sesión </button>

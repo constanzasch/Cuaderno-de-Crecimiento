@@ -37,7 +37,8 @@ def registro(request):
             perfil=perfil_form.save(commit=False)
             perfil.user=user
             perfil.save()
-        return redirect('login')
+            
+            return redirect('login')
     else:
         user_form=RegistroUsuarioForm()
         perfil_form=PerfilForm()
